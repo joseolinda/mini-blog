@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "Inter", system-ui, sans-serif;
+}
+
+#menu a.active {
+    border-color: rgb(239 68 68);
+    color: rgb(239 68 68);
+    background-color: rgb(55 65 81);
+}
