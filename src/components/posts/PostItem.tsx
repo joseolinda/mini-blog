@@ -50,8 +50,9 @@ function PostItem ({ post }: { post: PostType }) {
                         src={post.image}
                         alt="Post"
                         className="w-full h-64 object-cover rounded-lg mt-4 cursor-pointer"
-                        onClick={() => {
-                            window.open(post.image, '_blank');
+                        onClick={(e) => {
+                            e.currentTarget.classList.toggle("image-fullscreen")
+                            document.body.classList.toggle("image-fullscreen")
                         }}
                     />
                 )}

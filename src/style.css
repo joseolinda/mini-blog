@@ -13,3 +13,26 @@ html {
     color: rgb(239 68 68);
     background-color: rgb(55 65 81);
 }
+
+img.image-fullscreen {
+    display: block;
+    position: fixed;
+    width: auto;
+    height: 80%;
+    max-width: 90vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.85);
+    opacity: 1 !important;
+    transition: all 0.3s ease;
+}
+
+body.image-fullscreen {
+    overflow: hidden;
+}
+
+.image-fullscreen #container-menu {
+    opacity: 0.20;
+}
